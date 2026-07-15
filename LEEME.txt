@@ -1,0 +1,36 @@
+HVAC HUB — PROTOTIPO 1
+========================
+
+Este prototipo contiene el primer módulo del HUB: cálculo automático de ductos.
+
+FUNCIONAMIENTO
+--------------
+1. Escribe el caudal en CFM.
+2. Elige:
+   - Ramal: 1000 FPM
+   - Troncal: 1400 FPM
+   - Personalizada
+3. Los resultados cambian automáticamente; no existe botón "Calcular".
+4. Solo se muestran dimensiones donde:
+   - ancho > alto;
+   - el ancho aumenta de 1 en 1;
+   - el alto baja o se mantiene hasta llegar a 1 pulgada;
+   - la velocidad real no supera la velocidad de diseño.
+
+CONVERSIONES MOSTRADAS
+----------------------
+- Exacta: 1 pulgada = 2.54 cm
+- Aproximada solicitada: 1 pulgada ≈ 25 mm
+
+Nota: 25, 50, 75... corresponden a milímetros, no a centímetros.
+Por eso el programa muestra ambas conversiones.
+
+EJECUCIÓN
+---------
+Windows:
+    Doble clic en iniciar_hvac_hub.bat
+
+O desde una terminal:
+    python hvac_hub_prototipo.py
+
+No necesita librerías externas.
